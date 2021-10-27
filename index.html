@@ -26,7 +26,7 @@
       >
         <div class="col-md-7 p-lg-5 mx-auto my-5">
           <h1 class="display-3 fw-bold" id="titulo">Cotizador</h1>
-       
+
       </div>
     </main>
 
@@ -44,31 +44,43 @@
               <div class="form-check">
                 <input class="form-check-input" type="radio" name="cambio"  id="Euro" >Euro
              </div>
-              
+
             </div>
             <div class="mb-2">
               <p1>Por favor ingrese un monto en $ARS para cotizar:</p1>
               <input
-                class="form-control"  
+                class="form-control"
                 type="number"
                 id="valor"
                 min="1"
                 max="100000000"
               >
             </div>
-            
+
             </div>
             <div class="mb-2">
               <input type="button" class="btn btn-primary" id="cotizar" value="Cotizar" onclick="convertir()">
             </div>
           </form>
         </div>
-      
 
-        
+
+
     </section>
-    <script src="/jquery-3.6.0.min.js"></script>
-    <script src="/main.js"></script>
+    <section class="d-flex justify-content-center p-lg-1 mx-auto my-5">
+      <div class="card col-sm-10 p-3">
+        <div class="mb-3">
+          <h3>Ultimas Cotizaciones</h3>
+        </div>
+        <div class="mb-2">
+          <ul id="ultimasCotizaciones">
+
+          </ul>
+        </div>
+      </div>
+    </section>
+    <script src="./jquery-3.6.0.min.js"></script>
+    <script src="./main.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
       integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
